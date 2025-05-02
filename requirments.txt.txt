@@ -1,9 +1,0 @@
-streamlit
-python-dotenv
-langchain
-langchain-community
-langchain-core
-langchain-groq
-langchain-huggingface
-langchain-chroma
-PyMuPDF
