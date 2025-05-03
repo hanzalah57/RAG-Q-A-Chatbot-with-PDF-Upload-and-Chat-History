@@ -14,9 +14,10 @@ langchain-text-splitters>=0.2.0,<0.4.0
 
 # Pydantic v2 for LangChain 0.3.x
 pydantic>=2.7.4,<3.0.0
+protobuf==4.23.4
 
 # Vector database
-chromadb>=0.3.27
+chromadb==0.4.22
 faiss-cpu>=1.7.4
 
 # PDF handling
@@ -42,4 +43,6 @@ langsmith>=0.0.7
 # Numerical
 numpy>=1.24.0,<2.0
 
-sentence-transformers
+opentelemetry-api==1.23.0
+opentelemetry-exporter-otlp-proto-grpc==1.23.0
+
