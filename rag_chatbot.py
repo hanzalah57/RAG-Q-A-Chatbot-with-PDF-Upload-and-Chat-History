@@ -1,30 +1,34 @@
-import os
-import tempfile
-import streamlit as st
-from dotenv import load_dotenv
+import os 
+import time 
+import tempfile # To store uploaded PDFs on disk temporarily
 
-# Langchain Core classes and Utilities
+import streamlit as st # Main straeamlit library
+ 
+ 
+from dotenv import load_dotenv # to read .env file
+
+# Langchain core classes & utilities
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
-# Langchain LLM and Chaining Utilities
+## Langchain LLM and chaining utilities
 from langchain_groq import ChatGroq
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 
-# Text Splitting and Embeddings
+# Text splitting & embeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 
-# Vector Store
+# vector store
 from langchain_chroma import Chroma
 
-# PDF file loader
-from langchain_community.document_loaders import PyMuPDFLoader
+## PDF file loader (loads a single PDF into docs)
+from langchain_community.document_loaders import PyPDFLoader
 
 
-# Load environment variables
+# Loading environment variables ( HF_TOKEN, GROQ_API_KEY)
 load_dotenv()
 
 # Streamlit Page Setup
