@@ -1,13 +1,45 @@
-streamlit==1.33.0
-python-dotenv==1.0.1
-langchain==0.1.14
-langchain-community==0.0.29
-langchain-core==0.1.35
-langchain-groq==0.0.4
-langchain-huggingface==0.0.6
-langchain-chroma==0.1.0
-chromadb==0.4.24
-PyMuPDF==1.23.22
-protobuf==4.25.3
-open-telemetry-api==1.23.0
-opentelemetry-exporter-otlp-proto-grpc==1.23.0
+# Core
+streamlit>=1.20.0
+python-dotenv>=1.0.0
+ipykernel>=6.16.0
+
+# LangChain & extensions (all <0.4.0)
+langchain>=0.3.14,<0.4.0
+langchain-core>=0.3.14,<0.4.0
+langchain-community>=0.3.14,<0.4.0
+langchain-groq>=0.2.4,<0.3.0
+langchain-huggingface>=0.1.2,<0.2.0
+langchain-chroma>=0.1.0,<0.3.0
+langchain-text-splitters>=0.2.0,<0.4.0
+
+# Pydantic v2 for LangChain 0.3.x
+pydantic>=2.7.4,<3.0.0
+
+# Vector database
+chromadb>=0.3.27
+faiss-cpu>=1.7.4
+
+# PDF handling
+pypdf>=3.10.0
+pymupdf>=1.23.1
+
+# Transformers & embeddings
+sentence-transformers>=2.2.2
+huggingface-hub>=0.17.0
+torch>=2.0.1
+
+# Data & utilities
+duckdb>=0.8.1
+pandas>=2.0.2
+wikipedia>=1.4.0
+beautifulsoup4>=4.12.2
+arxiv>=1.4.0
+
+# LLMs & other APIs
+
+langsmith>=0.0.7
+
+# Numerical
+numpy>=1.24.0,<2.0
+
+sentence-transformers
