@@ -16,6 +16,7 @@ langchain-text-splitters>=0.2.0,<0.4.0
 pydantic>=2.7.4,<3.0.0
 protobuf==4.23.4
 
+
 # Vector database
 chromadb==0.4.22
 faiss-cpu>=1.7.4
