@@ -36,20 +36,20 @@ load_dotenv()
 # Streamlit page setup
 
 st.set_page_config(
-    page_title = " 📄 RAG Q&A with PDF & Chat History",
+    page_title = "🧠 RAG Q&A with PDF Uploads and Chat History",
     layout = "wide",
     initial_sidebar_state= "expanded"
 )
-st.title(" 📄 RAG Q&A with PDF uploades and Chat History")
+st.title("🧠 RAG Q&A with PDF Uploads and Chat History")
 
-st.sidebar.header(" ⚙️ Configuration")
+st.sidebar.header("🪛Configuration")
 st.sidebar.write(
     " - Enter your Groq API Key \n "
     " - Upload PDFs on the main page \n "
     " - Ask questions and see chat history"
 )
 
-## API Keys & embedding setup
+## API Keys & embedding
 
 api_key = st.sidebar.text_input("Groq API Key", type="password")
 os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN","") # for HuggingFace embeddings
